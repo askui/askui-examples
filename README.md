@@ -1,9 +1,10 @@
 # askui-examples
 
 This repository contains automation examples using askui.
+
 If you find an error and can fix it, please create a Pull Request 🥰
 
-> Only the automation files are provided. If you want to run these automations then please [install askui first](https://docs.askui.com/docs/general/Getting%20Started/getting-started)!
+> ‼️ Only the automation files are provided. If you want to run these automations then please [install askui first](https://docs.askui.com/docs/general/Getting%20Started/getting-started)!
 
 ## Get Help
 Our [Discord community](https://discord.gg/KFYJ5xuyBA) is there to help you.
