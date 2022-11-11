@@ -18,9 +18,9 @@ For a better overview, we also provide a list here.
 * [Search Cat Pictures on Google](search-cat-pictures)
 * [Zip Images and Upload to Google Drive](zip-images-upload-google-drive)
 * [Spotify Like Songs](spotify-like-songs)
+* [2 Factor Authentication with Android device on GitHub](2-factor-authentication-android-github)
 
 <!--- * [Coming soon! Search on AirBnB](search-airbnb) --->
-<!--- * [Coming soon! 2 Factor Authentication with Android device on GitHub](2-factor-authentication-android-github) --->
 
 ## Additional Examples
 
