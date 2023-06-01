@@ -3,6 +3,7 @@ import { aui } from './helper/jest.setup';
 describe('jest with askui', () => {
 
   it('search for airbnb rooms', async () => {
+    // Starting point is askui homepage: https://www.askui.com
     await aui.click().text().containsText("askui.com").exec();
     await aui.pressTwoKeys('control', 'A').exec();
     await aui.pressKey('delete').exec();

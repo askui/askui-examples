@@ -1,6 +1,6 @@
 import { aui } from './helper/jest.setup';
 
-describe(/* a string identifying the test suite */, () => {
+describe('zip and upload suite', () => {
 
     it('Should upload screenshots folder on google drive', async () => {
         await aui.click().text().withText('askui').exec();

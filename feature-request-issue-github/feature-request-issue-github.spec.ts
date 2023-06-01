@@ -2,13 +2,8 @@ import { aui } from './helper/jest.setup';
 
 describe('request a feature in Github with askui', () => {
   it('should open askui Github repo', async () => {
-    await aui.click()
-      .url()
-      .exec();
-    await aui.pressTwoKeys('control', 'A')
-      .exec();
-    await aui.pressKey('delete')
-      .exec();
+    // Starting point us Google.com
+    // Focus is the in the search field
     await aui.type('https://github.com/askui/askui')
       .exec();
     await aui.pressKey('enter')
@@ -47,7 +42,7 @@ describe('request a feature in Github with askui', () => {
       .exec();
 
     await aui.click()
-      .textarea()
+      .textfield()
       .below()
       .button()
       .withText('write')
