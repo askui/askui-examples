@@ -17,8 +17,7 @@ describe('jest with askui', () => {
     // type google.com into browser bar
     await aui
       .typeIn('google.com')
-      .text()
-      .withText('Search Google or type a URL')
+      .text('Search Google or type a URL')
       .exec();
 
     // Hit enter key
@@ -29,18 +28,18 @@ describe('jest with askui', () => {
     // Click the Images-text to the right of Gmail
     await aui
       .click()
-      .text().withTextRegex("Image*")
+      .text().withTextRegex('Image*')
       .rightOf()
-      .text().withText("Gmail")
+      .text('Gmail')
       .exec();
 
     // Type in cat into search field
     // Notice: withText does not have to be 100% equal
     await aui
-      .typeIn("cat")
+      .typeIn('cat')
       .textfield()
       .below()
-      .icon().withText("G00g.e")
+      .icon().withText('G00g.e')
       .exec();
 
     await aui
@@ -54,8 +53,7 @@ describe('jest with askui', () => {
       .moveMouseTo()
       .image()
       .above()
-      .text()
-      .withText("pet guru Yuki Hattori explaiinICats")
+      .text('pet guru Yuki Hattori explaiinICats')
       .exec();
 
     // Save the image with right click
@@ -66,8 +64,7 @@ describe('jest with askui', () => {
     // Find the right dialog entry
     await aui
       .click()
-      .text()
-      .withText('save image as')
+      .text('save image as')
       .exec();
 
     // Save it

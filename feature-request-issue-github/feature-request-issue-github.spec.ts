@@ -2,40 +2,37 @@ import { aui } from './helper/jest.setup';
 
 describe('request a feature in Github with askui', () => {
   it('should open askui Github repo', async () => {
-    // Starting point us Google.com
+    // Starting point is google.com
     // Focus is the in the search field
-    await aui.type('https://github.com/askui/askui')
-      .exec();
-    await aui.pressKey('enter')
-      .exec();
+    await aui.type('https://github.com/askui/askui').exec();
+    await aui.pressKey('enter').exec();
   });
   it('should open an issue', async () => {
     await aui.click()
-      .text().withText('Issues').above()
-      .text()
-      .withText('Code')
+      .text('Issues')
+      .above()
+      .text('Code')
       .exec();
 
     await aui.click()
-      .button().contains().text()
+      .button()
       .withText('New issue')
       .exec();
 
     await aui.click()
-      .button().contains().text()
+      .button()
       .withText('Get started')
       .below()
-      .text()
-      .withText('Create a report to help us improve')
+      .text('Create a report to help us improve')
       .exec();
 
     await aui.expect()
-      .text().withText('Issue: Feature request')
+      .text('Issue: Feature request')
       .exists()
       .exec();
 
     await aui.typeIn('scrollUntil')
-      .text().withText('Title')
+      .text('Title')
       .above()
       .button()
       .withText('write')
@@ -83,7 +80,7 @@ describe('request a feature in Github with askui', () => {
 
   it('should submit new issue', async () => {
     await aui.expect()
-      .text().withText('scrollUntil')
+      .text('scrollUntil')
       .exists()
       .exec();
 
