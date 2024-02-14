@@ -1,13 +1,13 @@
 # askui-examples
 
-This repository contains automation examples using askui.
+This repository contains automation examples using AskUI.
 
 If you find an error and can fix it, please create a Pull Request 🥰
 
-> ‼️ Only the automation files are provided. If you want to run these automations then please [install askui first](https://docs.askui.com/docs/general/Getting%20Started/getting-started)!
+> ‼️ Only the automation files are provided. If you want to run these automations then please install AskUI first: [Windows](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started), [Linux](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-linux), [macOS](https://docs.askui.com/docs/general/Getting%20Started/Installing%20AskUI/getting-started-macos).
 
 ## Get Help
-Our [Discord community](https://discord.gg/KFYJ5xuyBA) is there to help you.
+Our [Outverse community](https://app.outverse.com/askui/community/home) is there to help you.
 
 ## Structure
 Every automation will have its own folder with the required files. A README explaining briefly what the code does and additional resources, if existent.
