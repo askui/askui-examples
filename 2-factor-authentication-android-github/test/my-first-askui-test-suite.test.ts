@@ -4,7 +4,7 @@ describe('jest with askui', () => {
   it('should click on text', async () => {
 
     await aui.mouseLeftClick().exec();
-    await aui.click().text().withText('Sign in').exec();
+    await aui.clickText('Sign in');
     await aui
       .typeIn('<Username>')
       .textfield()
@@ -21,8 +21,7 @@ describe('jest with askui', () => {
       .withText('Password')
       .exec();
 
-    await aui.pressKey('tab').exec();
-    await aui.pressKey('enter').exec();
+    await aui.pressKeys(['tab', 'enter']).exec();
 
     const codeElements = 
       await auiAndroid

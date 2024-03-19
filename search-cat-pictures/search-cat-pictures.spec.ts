@@ -69,7 +69,7 @@ describe('jest with askui', () => {
 
     // Save it
     // If it does not work because the button is not found
-    // Remove the '.button()'
+    // Remove the '.button()' and replace 'withText' with 'text' 
     await aui
       .click()
       .button()

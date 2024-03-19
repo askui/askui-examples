@@ -3,7 +3,7 @@ import { aui } from './helper/jest.setup';
 describe('zip and upload suite', () => {
 
     it('Should upload screenshots folder on google drive', async () => {
-        await aui.click().text('askui').exec();
+        await aui.clickText('askui').exec();
         await aui.mouseDoubleLeftClick().exec();
 
         // The text to insert here should be something in the opened explorer window.
@@ -13,12 +13,12 @@ describe('zip and upload suite', () => {
         await aui.pressTwoKeys('control', 'A').exec();
 
         await aui.mouseRightClick().exec();
-        await aui.click().text('Compress to Zip file').exec();
+        await aui.clickText('Compress to Zip file');
         await aui.type('askui screenshots').exec();
         await aui.pressKey('enter').exec();
 
         await aui.click().icon().withText('minus').nearestTo().icon().withText('stop').exec();
-        await aui.click().text('Google').exec();
+        await aui.clickText('Google');
         await aui.mouseDoubleLeftClick().exec();
 
         // Omit this step if you do not use profiles in chrome
@@ -27,11 +27,8 @@ describe('zip and upload suite', () => {
         await aui.pressKey('enter').exec();
 
         await aui.mouseRightClick().exec();
-        await aui.click().text('File upload').exec();
-        await aui.click().text('Desktop').exec();
-        await aui.click().text('askui').exec();
+        await aui.clickTexts(['File upload', 'Desktop', 'askui']);
         await aui.pressKey('enter').exec();
-        await aui.click().text('askui screenshots').exec();
-        await aui.click().text('Open').exec();
+        await aui.clickTexts(['askui screenshots', 'Open']);
     });
 });
