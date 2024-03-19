@@ -14,10 +14,7 @@ describe('request a feature in Github with askui', () => {
       .text('Code')
       .exec();
 
-    await aui.click()
-      .button()
-      .withText('New issue')
-      .exec();
+    await aui.clickButton('New issue')
 
     await aui.click()
       .button()
@@ -84,8 +81,6 @@ describe('request a feature in Github with askui', () => {
       .exists()
       .exec();
 
-    await aui.click()
-      .button().withText('Submit new issue')
-      .exec();
+    await aui.clickButton('Submit new issue');
   });
 });
